@@ -12,14 +12,14 @@ import {
 
 const Education = () => {
   const education = {
-    degree: "Bachelor of Engineering in Software Engineering",
+    degree: "Bachelor of Applied Science in Software Engineering (Co-op)",
     university: "University of Ottawa",
-    location: "Ottawa, Ontario, Canada",
+    location: "Ottawa, ON",
     period: "2016 – 2021",
     gpa: "3.7/4.0",
     honors: "Dean's List (2019, 2020)",
     description:
-      "Comprehensive software engineering program focusing on software design, development methodologies, and engineering principles.",
+      "Comprehensive software engineering program with co-op work terms, focusing on software design, development methodologies, and engineering principles.",
   };
 
   const relevantCourses = [
