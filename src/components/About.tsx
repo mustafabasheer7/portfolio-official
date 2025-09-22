@@ -47,6 +47,69 @@ const About = () => {
           </motion.p>
         </motion.div>
 
+        {/* Key Results Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mb-16 bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800"
+        >
+          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-gray-100 mb-8">
+            Key Results @ Noterro
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">
+                -38%
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                average page load via Next.js migration using SSR/ISR and
+                route-level code-splitting
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                -70%
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                redundant API traffic using SWR/React Query with request
+                de-duplication and cache policies
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+                -25%
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                delivery time with a Tailwind + Storybook design system adopted
+                across 50+ screens
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Photo Placeholder */}
           <motion.div
