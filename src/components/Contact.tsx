@@ -137,7 +137,8 @@ const Contact = () => {
             className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
           >
             I'm always interested in new opportunities and exciting projects.
-            Let's discuss how we can create something amazing together.
+            Eligible to work in Canada/US. Let's discuss how we can create
+            something amazing together.
           </motion.p>
         </motion.div>
 
