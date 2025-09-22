@@ -231,6 +231,42 @@ const About = () => {
               </motion.a>
             </motion.div>
 
+            {/* Beyond Code Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="pt-8 border-t border-gray-200 dark:border-gray-700"
+            >
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Beyond Code
+              </h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-teal-500" />
+                  <span className="text-gray-700 dark:text-gray-300">
+                    <strong>Fitness enthusiast</strong> - Regular gym workouts
+                    for physical and mental well-being
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-purple-500" />
+                  <span className="text-gray-700 dark:text-gray-300">
+                    <strong>Tech enthusiast</strong> - Passionate about the
+                    latest technology and gadgets
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-blue-500" />
+                  <span className="text-gray-700 dark:text-gray-300">
+                    <strong>Sports fan</strong> - Enjoy watching soccer and MMA
+                    fights
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
