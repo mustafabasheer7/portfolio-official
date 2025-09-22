@@ -122,15 +122,12 @@ const About = () => {
             <div className="relative group">
               {/* Photo Container */}
               <div className="relative w-80 h-96 mx-auto bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl overflow-hidden shadow-2xl">
-                {/* Placeholder Avatar */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-teal-100 to-blue-100 dark:from-teal-900 dark:to-blue-900">
-                  <div className="w-32 h-32 bg-teal-200 dark:bg-teal-700 rounded-full flex items-center justify-center">
-                    <User
-                      size={48}
-                      className="text-teal-600 dark:text-teal-300"
-                    />
-                  </div>
-                </div>
+                {/* Professional Photo */}
+                <img
+                  src="/Mustafa.jpg"
+                  alt="Mustafa Basheer"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {/* Overlay Effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
