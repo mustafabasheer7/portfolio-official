@@ -121,7 +121,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300"
           >
-            Full-Stack Developer
+            Full-Stack Engineer (React/Next.js)
           </motion.h2>
 
           {/* Tagline */}
