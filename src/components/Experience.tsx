@@ -40,14 +40,15 @@ const Experience = () => {
     {
       title: "Full-Stack Developer",
       company: "Freelance",
-      location: "Remote",
+      location: "Remote, Canada",
       period: "2021 – 2022",
       type: "Contract",
       description:
-        "Built responsive brochure sites for local businesses using React, HTML/CSS, and Firebase.",
+        "Built full-stack web applications for local businesses using modern React architecture, Firebase backend services, and responsive design principles.",
       achievements: [
-        "Built responsive brochure sites for local businesses using React, HTML/CSS, and Firebase",
-        "Deployed on Netlify with basic CI for quick client updates and maintenance",
+        "Architected and developed responsive business websites using React, HTML/CSS, and Firebase with focus on performance and mobile-first design",
+        "Implemented client solutions including contact forms, appointment scheduling systems, and email integrations with third-party APIs",
+        "Established CI/CD pipelines on Netlify for automated deployments and streamlined client maintenance workflows",
       ],
       technologies: [
         "React",
@@ -60,33 +61,41 @@ const Experience = () => {
       color: "from-blue-500 to-indigo-500",
     },
     {
-      title: "Web Developer (Co-op)",
+      title: "Web Developer Intern",
       company: "University of Ottawa",
-      location: "Ottawa, ON",
+      location: "Ottawa, Canada",
       period: "May 2020 – Sep 2020",
       type: "Co-op",
       description:
-        "Contributed to the Academic Accommodations Service (student-facing) and built an internal React app.",
+        "Led modernization of Academic Accommodations Service portal serving 3,000+ students, implementing React-based dynamic form systems.",
       achievements: [
-        "Contributed to the Academic Accommodations Service (student-facing) and built an internal React app to consolidate branch data",
-        "Collaborated with branch managers and supported database design and integration",
+        "Engineered a React dynamic form builder for the Academic Accommodations Service, reducing staff administrative overhead by 20% and improving student experience",
+        "Delivered 50+ Jira tickets (PHP/JavaScript/SQL) ahead of project timelines while maintaining high code quality standards through comprehensive peer reviews",
+        "Enhanced system reliability by expanding PHPUnit test coverage from 45% to 73%, implementing automated testing protocols",
       ],
-      technologies: ["React", "JavaScript", "CSS3", "HTML5", "Database Design"],
+      technologies: ["React", "PHP", "JavaScript", "SQL", "PHPUnit", "Jira"],
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "Software Developer (Co-op)",
+      title: "Software Developer Intern",
       company: "Ribbon Communications",
-      location: "Ottawa, ON",
+      location: "Ottawa, Canada",
       period: "Sep 2018 – Dec 2018",
       type: "Co-op",
       description:
-        "Contributed to Java feature design and testing, debugging web apps with Eclipse.",
+        "Contributed to enterprise Java application development with focus on feature design, comprehensive testing, and system stability improvements.",
       achievements: [
-        "Contributed to Java feature design and testing, debugging web apps with Eclipse",
-        "Documented components to support maintenance and knowledge transfer",
+        "Designed and implemented Java software features with comprehensive test case development to enhance system stability and reduce production bugs",
+        "Leveraged Eclipse IDE and debugging tools to diagnose and resolve complex issues in enterprise Java web applications",
+        "Created detailed technical documentation for software components, facilitating knowledge transfer and long-term maintenance strategies",
       ],
-      technologies: ["Java", "Eclipse", "Web Apps", "Documentation"],
+      technologies: [
+        "Java",
+        "Eclipse",
+        "Testing",
+        "Debugging",
+        "Documentation",
+      ],
       color: "from-purple-500 to-violet-500",
     },
   ];
