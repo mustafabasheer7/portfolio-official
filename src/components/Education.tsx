@@ -8,6 +8,7 @@ import {
   Award,
   BookOpen,
   Code,
+  Briefcase,
 } from "lucide-react";
 
 const Education = () => {
@@ -45,13 +46,7 @@ const Education = () => {
     },
     {
       category: "Computer Science",
-      courses: [
-        "Computer Graphics",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Operating Systems",
-        "Computer Networks",
-      ],
+      courses: ["Computer Graphics", "Operating Systems", "Computer Networks"],
     },
   ];
 
@@ -326,16 +321,20 @@ const Education = () => {
                 value: "5",
                 icon: <Calendar size={24} />,
               },
-              { label: "GPA", value: "3.7", icon: <Award size={24} /> },
               {
-                label: "Dean's List",
-                value: "2x",
-                icon: <GraduationCap size={24} />,
+                label: "Co-op Experience",
+                value: "4 Terms",
+                icon: <Briefcase size={24} />,
               },
               {
-                label: "Major Projects",
-                value: "15+",
-                icon: <Code size={24} />,
+                label: "Capstone Success",
+                value: "Top 10%",
+                icon: <Award size={24} />,
+              },
+              {
+                label: "Team Leadership",
+                value: "5 Projects Led",
+                icon: <GraduationCap size={24} />,
               },
             ].map((stat, index) => (
               <motion.div
