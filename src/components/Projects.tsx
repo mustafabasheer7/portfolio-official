@@ -189,22 +189,34 @@ const Projects = () => {
                 </div>
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="p-3 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors duration-200 cursor-pointer"
-                  >
-                    <ExternalLink size={20} />
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="p-3 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors duration-200 cursor-pointer"
-                  >
-                    <Github size={20} />
-                  </motion.button>
-                </div>
+                {project.links && (
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                    {project.links.live && (
+                      <motion.a
+                        href={project.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="p-3 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors duration-200 cursor-pointer"
+                      >
+                        <ExternalLink size={20} />
+                      </motion.a>
+                    )}
+                    {project.links.github && (
+                      <motion.a
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="p-3 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors duration-200 cursor-pointer"
+                      >
+                        <Github size={20} />
+                      </motion.a>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Content */}
