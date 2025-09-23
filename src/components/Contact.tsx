@@ -82,13 +82,31 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Here you would typically send the form data to your backend or form service
-      // For demo purposes, we'll simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Using Formspree - much simpler, no authentication needed
+      const formspreeUrl =
+        process.env.NEXT_PUBLIC_FORMSPREE_URL ||
+        "https://formspree.io/f/YOUR_FORM_ID";
 
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      const response = await fetch(formspreeUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
     } catch (error) {
+      console.error("Error sending message:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
