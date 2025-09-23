@@ -198,12 +198,12 @@ const Skills = () => {
 
           <div className="max-w-4xl mx-auto space-y-8">
             {[
-              { name: "React/Next.js Development", level: 95 },
+              { name: "React/Next.js", level: 95 },
               { name: "TypeScript", level: 90 },
               { name: "Backend Development", level: 85 },
               { name: "Database Design", level: 80 },
               { name: "Performance Optimization", level: 90 },
-              { name: "AI Integration", level: 85 },
+              { name: "AI Integration", level: 90 },
             ].map((skill, index) => (
               <motion.div
                 key={skill.name}
