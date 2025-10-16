@@ -17,8 +17,6 @@ const Education = () => {
     university: "University of Ottawa",
     location: "Ottawa, ON",
     period: "2016 – 2021",
-    gpa: "3.7/4.0",
-    honors: "Dean's List (2019, 2020)",
     description:
       "Comprehensive software engineering program with co-op work terms, focusing on software design, development methodologies, and engineering principles.",
   };
@@ -51,13 +49,6 @@ const Education = () => {
   ];
 
   const achievements = [
-    {
-      title: "Dean's List Recognition",
-      description:
-        "Achieved Dean's List status for academic excellence in 2019 and 2020",
-      icon: <Award size={20} />,
-      color: "from-yellow-500 to-orange-500",
-    },
     {
       title: "Capstone Project Excellence",
       description:
@@ -164,16 +155,6 @@ const Education = () => {
                       <MapPin size={14} />
                       {education.location}
                     </div>
-                  </div>
-
-                  {/* GPA and Honors */}
-                  <div className="flex flex-wrap gap-4 mb-4">
-                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full text-sm font-medium">
-                      GPA: {education.gpa}
-                    </span>
-                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-full text-sm font-medium">
-                      {education.honors}
-                    </span>
                   </div>
                 </div>
               </div>
