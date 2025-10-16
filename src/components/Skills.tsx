@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Database, Wrench, Zap, TestTube, Monitor } from "lucide-react";
+import { Code, Database, Wrench, TestTube, Monitor } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -132,7 +132,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {skillCategories.map((category, index) => (
+          {skillCategories.map((category, _index) => (
             <motion.div
               key={category.title}
               variants={cardVariants}

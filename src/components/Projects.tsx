@@ -1,14 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Folder,
-  ExternalLink,
-  Github,
-  Calendar,
-  Users,
-  Zap,
-} from "lucide-react";
+import { Folder, ExternalLink, Github, Calendar } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -157,7 +150,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="grid lg:grid-cols-2 gap-8"
         >
-          {projects.map((project, index) => (
+          {projects.map((project, _index) => (
             <motion.div
               key={project.title}
               variants={cardVariants}
@@ -267,7 +260,7 @@ const Projects = () => {
                 {/* Stats */}
                 <div className="mb-6 grid grid-cols-3 gap-4 py-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   {Object.entries(project.stats).map(
-                    ([key, value], statIndex) => (
+                    ([key, value], _statIndex) => (
                       <div key={key} className="text-center">
                         <div
                           className={`text-lg font-bold bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}

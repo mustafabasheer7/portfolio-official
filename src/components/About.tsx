@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, ExternalLink, User } from "lucide-react";
+import { Download, User } from "lucide-react";
 
 const About = () => {
   return (
@@ -181,8 +181,8 @@ const About = () => {
               <span className="font-semibold text-teal-600 dark:text-teal-400">
                 25%
               </span>
-              , and shipping features that drive growth. I'm passionate about
-              AI-accelerated development using tools like Cursor, GitHub
+              , and shipping features that drive growth. I&apos;m passionate
+              about AI-accelerated development using tools like Cursor, GitHub
               Copilot, and OpenAI API.
             </motion.p>
 
@@ -193,8 +193,8 @@ const About = () => {
               viewport={{ once: true }}
               className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
             >
-              When I'm not coding, you'll find me exploring the latest web
-              technologies, contributing to open-source projects, or
+              When I&apos;m not coding, you&apos;ll find me exploring the latest
+              web technologies, contributing to open-source projects, or
               experimenting with new development methodologies to stay at the
               cutting edge of the industry.
             </motion.p>

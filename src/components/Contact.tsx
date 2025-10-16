@@ -144,7 +144,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6"
           >
-            Let's Work Together
+            Let&apos;s Work Together
           </motion.h2>
 
           <motion.p
@@ -154,9 +154,9 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
           >
-            I'm always interested in new opportunities and exciting projects.
-            Eligible to work in Canada/US. Let's discuss how we can create
-            something amazing together.
+            I&apos;m always interested in new opportunities and exciting
+            projects. Eligible to work in Canada/US. Let&apos;s discuss how we
+            can create something amazing together.
           </motion.p>
         </motion.div>
 
@@ -380,7 +380,7 @@ const Contact = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-green-600 dark:text-green-400 text-sm text-center"
                   >
-                    Thank you! I'll get back to you soon.
+                    Thank you! I&apos;ll get back to you soon.
                   </motion.p>
                 )}
 
