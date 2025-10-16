@@ -205,29 +205,17 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4 pt-6"
+              className="flex justify-center pt-6"
             >
               <motion.a
                 href="/resume.pdf"
                 download
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 <Download size={20} />
                 Download Resume
-              </motion.a>
-
-              <motion.a
-                href="https://linkedin.com/in/mustafabasheer7"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white font-semibold rounded-lg transition-all duration-300 cursor-pointer"
-              >
-                <ExternalLink size={20} />
-                View LinkedIn
               </motion.a>
             </motion.div>
 
