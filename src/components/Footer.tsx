@@ -220,14 +220,14 @@ const Footer = () => {
         <div className="border-t border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
                 className="text-gray-400 text-sm flex items-center gap-1"
               >
-                © {currentYear} Mustafa Basheer. Made with
+                <span>© {currentYear} Mustafa Basheer. Made with</span>
                 <motion.span
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -235,8 +235,18 @@ const Footer = () => {
                 >
                   <Heart size={14} fill="currentColor" />
                 </motion.span>
-                using Next.js & Tailwind CSS
-              </motion.p>
+                <span>using Next.js & Tailwind CSS</span>
+                <span>•</span>
+                <motion.a
+                  href="https://github.com/mustafabasheer7/portfolio-official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  className="text-teal-400 hover:text-teal-300 transition-colors duration-300 underline"
+                >
+                  View Source Code
+                </motion.a>
+              </motion.div>
 
               {/* Back to Top */}
               <motion.button
