@@ -121,7 +121,7 @@ const About = () => {
           >
             <div className="relative group">
               {/* Photo Container */}
-              <div className="relative w-80 h-96 mx-auto bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-96 h-96 lg:h-[40rem] mx-auto bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl overflow-hidden shadow-2xl">
                 {/* Professional Photo */}
                 <img
                   src="/Mustafa.jpg"
