@@ -36,7 +36,7 @@ const Projects = () => {
       status: "Production",
       links: {
         live: "https://tealnews.site/",
-        github: "#",
+        github: "https://github.com/mustafabasheer7/teal-news",
       },
     },
     {
