@@ -26,18 +26,45 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mustafa Basheer" }],
   creator: "Mustafa Basheer",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/favicon-32x32.png",
+        color: "#00FFFF",
+      },
+    ],
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Mustafa Basheer - Full-Stack Developer",
     description:
       "Full-stack developer with 5+ years of experience building production-grade web apps. Specializing in React, Next.js, and performance-first UIs.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Mustafa Basheer - Full-Stack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mustafa Basheer - Full-Stack Developer",
     description:
       "Full-stack developer with 5+ years of experience building production-grade web apps. Specializing in React, Next.js, and performance-first UIs.",
+    images: ["/logo.png"],
   },
 };
 
