@@ -33,7 +33,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-20 left-20 w-32 h-32 bg-teal-200/20 dark:bg-teal-400/10 rounded-full blur-xl"
+          className="absolute top-16 left-4 sm:top-20 sm:left-20 w-24 h-24 sm:w-32 sm:h-32 bg-teal-200/20 dark:bg-teal-400/10 rounded-full blur-xl"
         />
 
         <motion.div
@@ -47,7 +47,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-40 right-32 w-24 h-24 bg-blue-200/20 dark:bg-blue-400/10 rounded-square blur-xl"
+          className="absolute top-32 right-4 sm:top-40 sm:right-32 w-16 h-16 sm:w-24 sm:h-24 bg-blue-200/20 dark:bg-blue-400/10 rounded-square blur-xl"
         />
 
         <motion.div
@@ -61,7 +61,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute bottom-20 left-1/3 w-20 h-20 bg-purple-200/20 dark:bg-purple-400/10 rounded-full blur-xl"
+          className="absolute bottom-16 left-1/4 sm:bottom-20 sm:left-1/3 w-16 h-16 sm:w-20 sm:h-20 bg-purple-200/20 dark:bg-purple-400/10 rounded-full blur-xl"
         />
 
         {/* Floating Particles */}
@@ -109,7 +109,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-teal-600 to-blue-600 dark:from-gray-100 dark:via-teal-400 dark:to-blue-400 bg-clip-text text-transparent"
+            className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-teal-600 to-blue-600 dark:from-gray-100 dark:via-teal-400 dark:to-blue-400 bg-clip-text text-transparent break-words"
           >
             Mustafa Basheer
           </motion.h1>
@@ -119,7 +119,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300 break-words"
           >
             Full-Stack Engineer (React/Next.js)
           </motion.h2>

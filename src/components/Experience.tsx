@@ -171,7 +171,7 @@ const Experience = () => {
           className="relative"
         >
           {/* Timeline Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-teal-500 via-blue-500 to-purple-500 transform md:-translate-x-1/2" />
+          <div className="absolute left-4 sm:left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-teal-500 via-blue-500 to-purple-500 transform md:-translate-x-1/2" />
 
           {experiences.map((experience, index) => (
             <motion.div
@@ -182,7 +182,7 @@ const Experience = () => {
               }`}
             >
               {/* Timeline Dot */}
-              <div className="absolute left-8 md:left-1/2 w-4 h-4 transform -translate-x-1/2 z-10">
+              <div className="absolute left-4 sm:left-8 md:left-1/2 w-4 h-4 transform -translate-x-1/2 z-10">
                 <div
                   className={`w-4 h-4 rounded-full bg-gradient-to-r ${experience.color} shadow-lg`}
                 />
@@ -194,7 +194,7 @@ const Experience = () => {
               {/* Content Card */}
               <motion.div
                 whileHover={{ scale: 1.02, y: -4 }}
-                className={`w-full md:w-5/12 ml-16 md:ml-0 ${
+                className={`w-full md:w-5/12 ml-8 sm:ml-12 md:ml-0 ${
                   index % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
                 }`}
               >
