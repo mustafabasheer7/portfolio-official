@@ -121,12 +121,12 @@ const About = () => {
           >
             <div className="relative group">
               {/* Photo Container */}
-              <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-96 h-64 sm:h-80 md:h-96 lg:h-[40rem] mx-auto bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-96 aspect-square sm:aspect-[4/5] lg:h-[40rem] mx-auto bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl overflow-hidden shadow-2xl">
                 {/* Professional Photo */}
                 <img
                   src="/Mustafa.jpg"
                   alt="Mustafa Basheer"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
 
                 {/* Overlay Effect */}
@@ -134,8 +134,8 @@ const About = () => {
               </div>
 
               {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-teal-200 dark:bg-teal-700 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-200 dark:bg-blue-700 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300" />
+              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-20 sm:h-20 bg-teal-200 dark:bg-teal-700 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300" />
+              <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-10 h-10 sm:w-16 sm:h-16 bg-blue-200 dark:bg-blue-700 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300" />
             </div>
           </motion.div>
 
